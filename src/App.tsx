@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Title from './Components/Title';
+import ProductList from './Components/ProductList';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+       <Header name='TypeShopping' />
+       <div className='p-4'>
+          <Title title='Te doy la bienvenida a tu primera tienda online creada con Typescript y React' />
+          <ProductList />
+       </div>
     </div>
   );
 }
