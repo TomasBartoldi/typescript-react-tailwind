@@ -9,7 +9,7 @@ function App(): JSX.Element {
     <div className="">
        <Header name='TypeShopping' />
        <div className='p-4'>
-          <Title title='Te doy la bienvenida a tu primera tienda online creada con Typescript y React' />
+          <Title title='Bienvenido a TypeShopping' />
           <ProductList />
        </div>
     </div>
